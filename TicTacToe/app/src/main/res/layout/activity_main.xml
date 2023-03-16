@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="194dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="155dp"
+        android:text="Reset"
+        app:icon="@android:drawable/ic_popup_sync"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.378"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        app:flow_wrapMode="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reset"
+        app:layout_constraintVertical_bias="0.134"
+        app:layout_wrapBehaviorInParent="skipped">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button2"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="128dp"
+                    android:layout_height="match_parent"
+                    android:background="#050505"
+                    android:ellipsize="none"
+                    android:lineSpacingExtra="8sp"
+                    android:text="-"
+                    android:textSize="36dp"
+                    android:visibility="visible"
+                    app:iconTint="#272424"
+                    tools:visibility="visible" />
+
+                <Button
+                    android:id="@+id/button3"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="128dp"
+                    android:layout_height="100dp"
+                    android:background="#0C0B0B"
+                    android:ellipsize="none"
+                    android:text="-"
+                    android:textSize="36dp" />
+
+                <Button
+                    android:id="@+id/button4"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="128dp"
+                    android:layout_height="100dp"
+                    android:background="#0C0C0C"
+                    android:ellipsize="none"
+                    android:text="-"
+                    android:textSize="36dp" />
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button5"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="128dp"
+                    android:layout_height="100dp"
+                    android:background="#0B0A0A"
+                    android:ellipsize="none"
+                    android:text="-"
+                    android:textSize="36dp" />
+
+                <Button
+                    android:id="@+id/button6"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="128dp"
+                    android:layout_height="100dp"
+                    android:background="#0E0E0E"
+                    android:ellipsize="none"
+                    android:text="-"
+                    android:textSize="36dp" />
+
+                <Button
+                    android:id="@+id/button7"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="128dp"
+                    android:layout_height="100dp"
+                    android:background="#090808"
+                    android:ellipsize="none"
+                    android:text="-"
+                    android:textSize="36dp" />
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button8"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="128dp"
+                    android:layout_height="100dp"
+                    android:background="#0B0909"
+                    android:ellipsize="none"
+                    android:text="-"
+                    android:textSize="36dp" />
+
+                <Button
+                    android:id="@+id/button9"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="128dp"
+                    android:layout_height="100dp"
+                    android:background="#0C0B0B"
+                    android:ellipsize="none"
+                    android:text="-"
+                    android:textSize="36dp" />
+
+                <Button
+                    android:id="@+id/button10"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="128dp"
+                    android:layout_height="100dp"
+                    android:background="#121010"
+                    android:ellipsize="none"
+                    android:text="-"
+                    android:textSize="36dp" />
+            </LinearLayout>
+
+        </TableRow>
+
+    </TableLayout>
+
+    <!--        ca-app-pub-3770935853731698/6636558908 orginal add id -->
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="336dp"
+        android:layout_height="169dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
